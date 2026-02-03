@@ -1,0 +1,367 @@
+{
+  "iris": {
+    "random": [
+      {
+        "lhs": [
+          "petal_length"
+        ],
+        "rhs": "petal_width",
+        "fd_string": "petal_length -> petal_width"
+      },
+      {
+        "lhs": [
+          "sepal_length",
+          "sepal_width"
+        ],
+        "rhs": "petal_length",
+        "fd_string": "sepal_length, sepal_width -> petal_length"
+      },
+      {
+        "lhs": [
+          "sepal_length",
+          "sepal_width"
+        ],
+        "rhs": "petal_width",
+        "fd_string": "sepal_length, sepal_width -> petal_width"
+      },
+      {
+        "lhs": [
+          "petal_length",
+          "petal_width"
+        ],
+        "rhs": "class",
+        "fd_string": "petal_length, petal_width -> class"
+      },
+      {
+        "lhs": [
+          "sepal_length",
+          "sepal_width",
+          "petal_length",
+          "petal_width"
+        ],
+        "rhs": "class",
+        "fd_string": "sepal_length, sepal_width, petal_length, petal_width -> class"
+      }
+    ],
+    "stratified": [
+      {
+        "lhs": [
+          "sepal_length"
+        ],
+        "rhs": "class",
+        "fd_string": "sepal_length -> class"
+      },
+      {
+        "lhs": [
+          "sepal_width"
+        ],
+        "rhs": "class",
+        "fd_string": "sepal_width -> class"
+      },
+      {
+        "lhs": [
+          "petal_length"
+        ],
+        "rhs": "class",
+        "fd_string": "petal_length -> class"
+      },
+      {
+        "lhs": [
+          "petal_width"
+        ],
+        "rhs": "class",
+        "fd_string": "petal_width -> class"
+      },
+      {
+        "lhs": [
+          "sepal_length",
+          "sepal_width",
+          "petal_length",
+          "petal_width"
+        ],
+        "rhs": "class",
+        "fd_string": "sepal_length, sepal_width, petal_length, petal_width -> class"
+      }
+    ]
+  },
+  "bridges": {
+    "random": [
+      {
+        "lhs": [
+          "IDENTIF"
+        ],
+        "rhs": "RIVER, LOCATION, ERECTED, PURPOSE, LENGTH, LANES, CLEAR",
+        "fd_string": "IDENTIF -> RIVER, LOCATION, ERECTED, PURPOSE, LENGTH, LANES, CLEAR"
+      },
+      {
+        "lhs": [
+          "RIVER"
+        ],
+        "rhs": "LOCATION",
+        "fd_string": "RIVER -> LOCATION"
+      },
+      {
+        "lhs": [
+          "LOCATION"
+        ],
+        "rhs": "RIVER",
+        "fd_string": "LOCATION -> RIVER"
+      },
+      {
+        "lhs": [
+          "ERECTED"
+        ],
+        "rhs": "PURPOSE, LENGTH, LANES, CLEAR",
+        "fd_string": "ERECTED -> PURPOSE, LENGTH, LANES, CLEAR"
+      },
+      {
+        "lhs": [
+          "PURPOSE"
+        ],
+        "rhs": "LENGTH, LANES, CLEAR",
+        "fd_string": "PURPOSE -> LENGTH, LANES, CLEAR"
+      }
+    ],
+    "stratified": [
+      {
+        "lhs": [
+          "IDENTIF"
+        ],
+        "rhs": "RIVER",
+        "fd_string": "IDENTIF -> RIVER"
+      },
+      {
+        "lhs": [
+          "IDENTIF"
+        ],
+        "rhs": "LOCATION",
+        "fd_string": "IDENTIF -> LOCATION"
+      },
+      {
+        "lhs": [
+          "IDENTIF"
+        ],
+        "rhs": "ERECTED",
+        "fd_string": "IDENTIF -> ERECTED"
+      },
+      {
+        "lhs": [
+          "IDENTIF"
+        ],
+        "rhs": "MATERIAL",
+        "fd_string": "IDENTIF -> MATERIAL"
+      },
+      {
+        "lhs": [
+          "IDENTIF"
+        ],
+        "rhs": "TYPE",
+        "fd_string": "IDENTIF -> TYPE"
+      }
+    ]
+  },
+  "abalone": {
+    "random": [
+      {
+        "lhs": [
+          "Sex"
+        ],
+        "rhs": "Rings",
+        "fd_string": "Sex -> Rings"
+      },
+      {
+        "lhs": [
+          "Length",
+          "Diameter",
+          "Height"
+        ],
+        "rhs": "Whole_weight",
+        "fd_string": "Length, Diameter, Height -> Whole_weight"
+      },
+      {
+        "lhs": [
+          "Length",
+          "Diameter",
+          "Height"
+        ],
+        "rhs": "Shucked_weight",
+        "fd_string": "Length, Diameter, Height -> Shucked_weight"
+      },
+      {
+        "lhs": [
+          "Length",
+          "Diameter",
+          "Height"
+        ],
+        "rhs": "Viscera_weight",
+        "fd_string": "Length, Diameter, Height -> Viscera_weight"
+      },
+      {
+        "lhs": [
+          "Length",
+          "Diameter",
+          "Height"
+        ],
+        "rhs": "Shell_weight",
+        "fd_string": "Length, Diameter, Height -> Shell_weight"
+      }
+    ],
+    "stratified": [
+      {
+        "lhs": [
+          "Sex"
+        ],
+        "rhs": "Rings",
+        "fd_string": "Sex -> Rings"
+      },
+      {
+        "lhs": [
+          "Length",
+          "Diameter",
+          "Height"
+        ],
+        "rhs": "Whole_weight, Shucked_weight, Viscera_weight, Shell_weight",
+        "fd_string": "Length, Diameter, Height -> Whole_weight, Shucked_weight, Viscera_weight, Shell_weight"
+      },
+      {
+        "lhs": [
+          "Whole_weight"
+        ],
+        "rhs": "Shucked_weight, Viscera_weight, Shell_weight",
+        "fd_string": "Whole_weight -> Shucked_weight, Viscera_weight, Shell_weight"
+      },
+      {
+        "lhs": [
+          "Diameter"
+        ],
+        "rhs": "Length",
+        "fd_string": "Diameter -> Length"
+      },
+      {
+        "lhs": [
+          "Length"
+        ],
+        "rhs": "Diameter",
+        "fd_string": "Length -> Diameter"
+      }
+    ]
+  },
+  "breast-cancer": {
+    "random": [
+      {
+        "lhs": [
+          "id"
+        ],
+        "rhs": "clump_thickness, uniformity_cell_size, uniformity_cell_shape, marginal_adhesion, single_epithelial_cell_size, bare_nuclei, bland_chromatin, normal_nucleoli, mitoses, class",
+        "fd_string": "id -> clump_thickness, uniformity_cell_size, uniformity_cell_shape, marginal_adhesion, single_epithelial_cell_size, bare_nuclei, bland_chromatin, normal_nucleoli, mitoses, class"
+      },
+      {
+        "lhs": [
+          "clump_thickness",
+          "uniformity_cell_size",
+          "uniformity_cell_shape",
+          "marginal_adhesion",
+          "single_epithelial_cell_size",
+          "bare_nuclei",
+          "bland_chromatin",
+          "normal_nucleoli",
+          "mitoses"
+        ],
+        "rhs": "class",
+        "fd_string": "clump_thickness, uniformity_cell_size, uniformity_cell_shape, marginal_adhesion, single_epithelial_cell_size, bare_nuclei, bland_chromatin, normal_nucleoli, mitoses -> class"
+      },
+      {
+        "lhs": [
+          "clump_thickness",
+          "uniformity_cell_size",
+          "uniformity_cell_shape",
+          "marginal_adhesion",
+          "single_epithelial_cell_size"
+        ],
+        "rhs": "bare_nuclei",
+        "fd_string": "clump_thickness, uniformity_cell_size, uniformity_cell_shape, marginal_adhesion, single_epithelial_cell_size -> bare_nuclei"
+      },
+      {
+        "lhs": [
+          "clump_thickness",
+          "uniformity_cell_size",
+          "uniformity_cell_shape",
+          "marginal_adhesion",
+          "single_epithelial_cell_size",
+          "bare_nuclei"
+        ],
+        "rhs": "bland_chromatin",
+        "fd_string": "clump_thickness, uniformity_cell_size, uniformity_cell_shape, marginal_adhesion, single_epithelial_cell_size, bare_nuclei -> bland_chromatin"
+      },
+      {
+        "lhs": [
+          "clump_thickness",
+          "uniformity_cell_size",
+          "uniformity_cell_shape",
+          "marginal_adhesion",
+          "single_epithelial_cell_size",
+          "bare_nuclei"
+        ],
+        "rhs": "normal_nucleoli",
+        "fd_string": "clump_thickness, uniformity_cell_size, uniformity_cell_shape, marginal_adhesion, single_epithelial_cell_size, bare_nuclei -> normal_nucleoli"
+      }
+    ],
+    "stratified": [
+      {
+        "lhs": [
+          "id"
+        ],
+        "rhs": "clump_thickness, uniformity_cell_size, uniformity_cell_shape, marginal_adhesion, single_epithelial_cell_size, bare_nuclei, bland_chromatin, normal_nucleoli, mitoses, class",
+        "fd_string": "id -> clump_thickness, uniformity_cell_size, uniformity_cell_shape, marginal_adhesion, single_epithelial_cell_size, bare_nuclei, bland_chromatin, normal_nucleoli, mitoses, class"
+      },
+      {
+        "lhs": [
+          "clump_thickness",
+          "uniformity_cell_size",
+          "uniformity_cell_shape",
+          "marginal_adhesion",
+          "single_epithelial_cell_size",
+          "bare_nuclei",
+          "bland_chromatin",
+          "normal_nucleoli",
+          "mitoses"
+        ],
+        "rhs": "class",
+        "fd_string": "clump_thickness, uniformity_cell_size, uniformity_cell_shape, marginal_adhesion, single_epithelial_cell_size, bare_nuclei, bland_chromatin, normal_nucleoli, mitoses -> class"
+      },
+      {
+        "lhs": [
+          "clump_thickness",
+          "uniformity_cell_size",
+          "uniformity_cell_shape",
+          "marginal_adhesion",
+          "single_epithelial_cell_size"
+        ],
+        "rhs": "bare_nuclei",
+        "fd_string": "clump_thickness, uniformity_cell_size, uniformity_cell_shape, marginal_adhesion, single_epithelial_cell_size -> bare_nuclei"
+      },
+      {
+        "lhs": [
+          "clump_thickness",
+          "uniformity_cell_size",
+          "uniformity_cell_shape",
+          "marginal_adhesion",
+          "single_epithelial_cell_size"
+        ],
+        "rhs": "bland_chromatin",
+        "fd_string": "clump_thickness, uniformity_cell_size, uniformity_cell_shape, marginal_adhesion, single_epithelial_cell_size -> bland_chromatin"
+      },
+      {
+        "lhs": [
+          "clump_thickness",
+          "uniformity_cell_size",
+          "uniformity_cell_shape",
+          "marginal_adhesion",
+          "single_epithelial_cell_size"
+        ],
+        "rhs": "normal_nucleoli",
+        "fd_string": "clump_thickness, uniformity_cell_size, uniformity_cell_shape, marginal_adhesion, single_epithelial_cell_size -> normal_nucleoli"
+      }
+    ]
+  }
+}

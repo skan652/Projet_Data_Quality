@@ -1,0 +1,18 @@
+{
+  "iris": {
+    "random": "FD1: petal_length -> petal_width\nFD2: sepal_length, sepal_width -> petal_length\nFD3: sepal_length, sepal_width -> petal_width\nFD4: petal_length, petal_width -> class\nFD5: sepal_length, sepal_width, petal_length, petal_width -> class",
+    "stratified": "FD1: sepal_length -> class\nFD2: sepal_width -> class\nFD3: petal_length -> class\nFD4: petal_width -> class\nFD5: sepal_length, sepal_width, petal_length, petal_width -> class"
+  },
+  "bridges": {
+    "random": "FD1: IDENTIF -> RIVER, LOCATION, ERECTED, PURPOSE, LENGTH, LANES, CLEAR-G, T-OR-D, MATERIAL, SPAN, REL-L, TYPE\nFD2: RIVER -> LOCATION\nFD3: LOCATION -> RIVER\nFD4: ERECTED -> PURPOSE, LENGTH, LANES, CLEAR-G, T-OR-D, MATERIAL, SPAN, REL-L, TYPE\nFD5: PURPOSE -> LENGTH, LANES, CLEAR-G, T-OR-D, MATERIAL, SPAN, REL-L, TYPE",
+    "stratified": "FD1: IDENTIF -> RIVER\nFD2: IDENTIF -> LOCATION\nFD3: IDENTIF -> ERECTED\nFD4: IDENTIF -> MATERIAL\nFD5: IDENTIF -> TYPE"
+  },
+  "abalone": {
+    "random": "FD1: Sex -> Rings\nFD2: Length, Diameter, Height -> Whole_weight\nFD3: Length, Diameter, Height -> Shucked_weight\nFD4: Length, Diameter, Height -> Viscera_weight\nFD5: Length, Diameter, Height -> Shell_weight",
+    "stratified": "FD1: Sex -> Rings\nFD2: Length, Diameter, Height -> Whole_weight, Shucked_weight, Viscera_weight, Shell_weight\nFD3: Whole_weight -> Shucked_weight, Viscera_weight, Shell_weight\nFD4: Diameter -> Length\nFD5: Length -> Diameter"
+  },
+  "breast-cancer": {
+    "random": "FD1: id -> clump_thickness, uniformity_cell_size, uniformity_cell_shape, marginal_adhesion, single_epithelial_cell_size, bare_nuclei, bland_chromatin, normal_nucleoli, mitoses, class\nFD2: clump_thickness, uniformity_cell_size, uniformity_cell_shape, marginal_adhesion, single_epithelial_cell_size, bare_nuclei, bland_chromatin, normal_nucleoli, mitoses -> class\nFD3: clump_thickness, uniformity_cell_size, uniformity_cell_shape, marginal_adhesion, single_epithelial_cell_size -> bare_nuclei\nFD4: clump_thickness, uniformity_cell_size, uniformity_cell_shape, marginal_adhesion, single_epithelial_cell_size, bare_nuclei -> bland_chromatin\nFD5: clump_thickness, uniformity_cell_size, uniformity_cell_shape, marginal_adhesion, single_epithelial_cell_size, bare_nuclei -> normal_nucleoli",
+    "stratified": "FD1: id -> clump_thickness, uniformity_cell_size, uniformity_cell_shape, marginal_adhesion, single_epithelial_cell_size, bare_nuclei, bland_chromatin, normal_nucleoli, mitoses, class\nFD2: clump_thickness, uniformity_cell_size, uniformity_cell_shape, marginal_adhesion, single_epithelial_cell_size, bare_nuclei, bland_chromatin, normal_nucleoli, mitoses -> class\nFD3: clump_thickness, uniformity_cell_size, uniformity_cell_shape, marginal_adhesion, single_epithelial_cell_size -> bare_nuclei\nFD4: clump_thickness, uniformity_cell_size, uniformity_cell_shape, marginal_adhesion, single_epithelial_cell_size -> bland_chromatin\nFD5: clump_thickness, uniformity_cell_size, uniformity_cell_shape, marginal_adhesion, single_epithelial_cell_size -> normal_nucleoli"
+  }
+}

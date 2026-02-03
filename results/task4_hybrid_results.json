@@ -1,0 +1,146 @@
+[
+  {
+    "dataset": "iris",
+    "fd": "sepal_length, petal_length -> class",
+    "technical_validity": 99.1869918699187,
+    "semantic_score": 8,
+    "hybrid_score": 8.959349593495935,
+    "category": "business_rule",
+    "reason": "Pétales et sépales définissent les espèces de fleurs"
+  },
+  {
+    "dataset": "iris",
+    "fd": "petal_length, petal_width -> class",
+    "technical_validity": 99.01960784313727,
+    "semantic_score": 9,
+    "hybrid_score": 9.450980392156863,
+    "category": "business_rule",
+    "reason": "Pétales déterminant clairement l'espèce de fleur"
+  },
+  {
+    "dataset": "iris",
+    "fd": "sepal_width, petal_length -> class",
+    "technical_validity": 98.36065573770492,
+    "semantic_score": 4,
+    "hybrid_score": 6.918032786885246,
+    "category": "derived",
+    "reason": "Petal length and sepal width do not uniquely identify class"
+  },
+  {
+    "dataset": "iris",
+    "fd": "sepal_width, petal_width -> class",
+    "technical_validity": 96.90721649484536,
+    "semantic_score": 4,
+    "hybrid_score": 6.845360824742268,
+    "category": "derived",
+    "reason": "Attributs dérivés des longueurs des sépales et pétales"
+  },
+  {
+    "dataset": "iris",
+    "fd": "sepal_length, petal_width -> class",
+    "technical_validity": 96.36363636363636,
+    "semantic_score": 3,
+    "hybrid_score": 6.318181818181818,
+    "category": "derived",
+    "reason": "Sepal length, petal width do not fully determine class"
+  },
+  {
+    "dataset": "iris",
+    "fd": "sepal_length, sepal_width -> class",
+    "technical_validity": 91.37931034482759,
+    "semantic_score": 4,
+    "hybrid_score": 6.568965517241379,
+    "category": "derived",
+    "reason": "Sepals provide partial information about class"
+  },
+  {
+    "dataset": "bridges",
+    "fd": "IDENTIF -> RIVER",
+    "technical_validity": 100.0,
+    "semantic_score": 10,
+    "hybrid_score": 10.0,
+    "category": "key",
+    "reason": "IDENTIF is a unique identifier for each bridge"
+  },
+  {
+    "dataset": "bridges",
+    "fd": "IDENTIF -> LOCATION",
+    "technical_validity": 100.0,
+    "semantic_score": 9,
+    "hybrid_score": 9.5,
+    "category": "key",
+    "reason": "IDENTIF is the unique identifier for each bridge"
+  },
+  {
+    "dataset": "bridges",
+    "fd": "IDENTIF -> ERECTED",
+    "technical_validity": 100.0,
+    "semantic_score": 9,
+    "hybrid_score": 9.5,
+    "category": "key",
+    "reason": "IDENTIF is unique identifier, ERECTED is natural part of bridge data"
+  },
+  {
+    "dataset": "bridges",
+    "fd": "IDENTIF -> PURPOSE",
+    "technical_validity": 100.0,
+    "semantic_score": 9,
+    "hybrid_score": 9.5,
+    "category": "business_rule",
+    "reason": "Le but d'un pont est une règle métier essentielle"
+  },
+  {
+    "dataset": "bridges",
+    "fd": "IDENTIF -> LENGTH",
+    "technical_validity": 100.0,
+    "semantic_score": 9,
+    "hybrid_score": 9.5,
+    "category": "key",
+    "reason": "IDENTIF is the primary key, LENGTH is a key attribute"
+  },
+  {
+    "dataset": "bridges",
+    "fd": "IDENTIF -> LANES",
+    "technical_validity": 100.0,
+    "semantic_score": 9,
+    "hybrid_score": 9.5,
+    "category": "key",
+    "reason": "IDENTIF is a natural key, uniquely identifies each bridge"
+  },
+  {
+    "dataset": "bridges",
+    "fd": "IDENTIF -> CLEAR-G",
+    "technical_validity": 100.0,
+    "semantic_score": 8,
+    "hybrid_score": 9.0,
+    "category": "key",
+    "reason": "IDENTIF is the unique identifier for each bridge"
+  },
+  {
+    "dataset": "bridges",
+    "fd": "IDENTIF -> T-OR-D",
+    "technical_validity": 100.0,
+    "semantic_score": 9,
+    "hybrid_score": 9.5,
+    "category": "key",
+    "reason": "Identifiant unique définit le type du pont"
+  },
+  {
+    "dataset": "bridges",
+    "fd": "IDENTIF -> MATERIAL",
+    "technical_validity": 100.0,
+    "semantic_score": 8,
+    "hybrid_score": 9.0,
+    "category": "key",
+    "reason": "IDENTIF is the unique identifier of the bridge"
+  },
+  {
+    "dataset": "bridges",
+    "fd": "IDENTIF -> SPAN",
+    "technical_validity": 100.0,
+    "semantic_score": 9,
+    "hybrid_score": 9.5,
+    "category": "key",
+    "reason": "Identifiant unique de chaque pont"
+  }
+]

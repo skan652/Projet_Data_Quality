@@ -1,0 +1,7 @@
+ID,Dataset,FD,Gemini,Humain,Accord
+1,iris,"petal_length, petal_width, sepal_length → spe...",UNKNOWN,MEANINGFUL,NON
+2,bridges,"MATERIAL, SPAN → TYPE",UNKNOWN,UNLIKELY,NON
+3,breast-cancer,"cell_size, cell_shape → diagnosis",UNKNOWN,MEANINGFUL,NON
+4,bridges,"E1 → MATERIAL, SPAN, TYPE, RIVER, ERECTED (E1...",UNKNOWN,DEGENERATE,NON
+5,nursery,"parents, has_nurs, form, children, housing, f...",UNKNOWN,OVERFITTED,NON
+6,abalone,"shell_weight, viscera_weight, whole_weight, s...",UNKNOWN,ACCIDENTAL,NON

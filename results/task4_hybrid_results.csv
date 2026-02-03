@@ -1,0 +1,17 @@
+dataset,fd,technical_validity,semantic_score,hybrid_score,category,reason
+bridges,IDENTIF -> RIVER,100.0,10,10.0,key,IDENTIF is a unique identifier for each bridge
+bridges,IDENTIF -> LOCATION,100.0,9,9.5,key,IDENTIF is the unique identifier for each bridge
+bridges,IDENTIF -> SPAN,100.0,9,9.5,key,Identifiant unique de chaque pont
+bridges,IDENTIF -> T-OR-D,100.0,9,9.5,key,Identifiant unique définit le type du pont
+bridges,IDENTIF -> LANES,100.0,9,9.5,key,"IDENTIF is a natural key, uniquely identifies each bridge"
+bridges,IDENTIF -> LENGTH,100.0,9,9.5,key,"IDENTIF is the primary key, LENGTH is a key attribute"
+bridges,IDENTIF -> PURPOSE,100.0,9,9.5,business_rule,Le but d'un pont est une règle métier essentielle
+bridges,IDENTIF -> ERECTED,100.0,9,9.5,key,"IDENTIF is unique identifier, ERECTED is natural part of bridge data"
+iris,"petal_length, petal_width -> class",99.01960784313727,9,9.450980392156863,business_rule,Pétales déterminant clairement l'espèce de fleur
+bridges,IDENTIF -> CLEAR-G,100.0,8,9.0,key,IDENTIF is the unique identifier for each bridge
+bridges,IDENTIF -> MATERIAL,100.0,8,9.0,key,IDENTIF is the unique identifier of the bridge
+iris,"sepal_length, petal_length -> class",99.1869918699187,8,8.959349593495935,business_rule,Pétales et sépales définissent les espèces de fleurs
+iris,"sepal_width, petal_length -> class",98.36065573770492,4,6.918032786885246,derived,Petal length and sepal width do not uniquely identify class
+iris,"sepal_width, petal_width -> class",96.90721649484536,4,6.845360824742268,derived,Attributs dérivés des longueurs des sépales et pétales
+iris,"sepal_length, sepal_width -> class",91.37931034482759,4,6.568965517241379,derived,Sepals provide partial information about class
+iris,"sepal_length, petal_width -> class",96.36363636363636,3,6.318181818181818,derived,"Sepal length, petal width do not fully determine class"

@@ -1,0 +1,38 @@
+[
+  {
+    "fd_id": 1,
+    "dataset": "iris",
+    "fd": "petal_length, petal_width, sepal_length → species",
+    "context": "Dataset de fleurs iris avec mesures de pétales et sépales pour classifier 3 espèces."
+  },
+  {
+    "fd_id": 2,
+    "dataset": "bridges",
+    "fd": "MATERIAL, SPAN → TYPE",
+    "context": "Dataset de ponts de Pittsburgh avec matériau (WOOD, IRON, STEEL), portée (SHORT, MEDIUM, LONG) et type de pont."
+  },
+  {
+    "fd_id": 3,
+    "dataset": "breast-cancer",
+    "fd": "cell_size, cell_shape → diagnosis",
+    "context": "Dataset médical avec caractéristiques cellulaires pour diagnostic de cancer (bénin/malin)."
+  },
+  {
+    "fd_id": 4,
+    "dataset": "bridges",
+    "fd": "E1 → MATERIAL, SPAN, TYPE, RIVER, ERECTED (E1 est l'identifiant unique du pont)",
+    "context": "Dataset de ponts où E1 est le numéro d'identification unique de chaque pont."
+  },
+  {
+    "fd_id": 5,
+    "dataset": "nursery",
+    "fd": "parents, has_nurs, form, children, housing, finance, social → recommendation",
+    "context": "Dataset d'évaluation de garderies avec 7 critères qui déterminent la recommandation."
+  },
+  {
+    "fd_id": 6,
+    "dataset": "abalone",
+    "fd": "shell_weight, viscera_weight, whole_weight, sex → diameter",
+    "context": "Dataset de coquillages (abalones) avec mesures de poids et dimensions."
+  }
+]

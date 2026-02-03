@@ -1,0 +1,34 @@
+dataset,sample_type,fd,holds_sample,holds_full,approx_sample,approx_full,violations_full,category
+iris,random,petal_length -> petal_width,False,False,50.0,32.55813953488372,29,false_negative
+iris,random,"sepal_length, sepal_width -> petal_length",True,False,100.0,81.03448275862068,22,false_positive
+iris,random,"sepal_length, sepal_width -> petal_width",False,False,92.85714285714286,81.03448275862068,22,false_negative
+iris,random,"petal_length, petal_width -> class",True,False,100.0,99.01960784313727,1,false_positive
+iris,random,"sepal_length, sepal_width, petal_length, petal_width -> class",True,True,100.0,100.0,0,true_positive
+iris,stratified,sepal_length -> class,False,False,90.47619047619048,45.714285714285715,19,false_negative
+iris,stratified,sepal_width -> class,False,False,57.14285714285714,39.130434782608695,14,false_negative
+iris,stratified,petal_length -> class,False,False,95.0,88.37209302325581,5,false_negative
+iris,stratified,petal_width -> class,True,False,100.0,77.27272727272727,5,false_positive
+iris,stratified,"sepal_length, sepal_width, petal_length, petal_width -> class",True,True,100.0,100.0,0,true_positive
+bridges,random,RIVER -> LOCATION,False,False,0.0,0.0,4,false_negative
+bridges,random,LOCATION -> RIVER,True,True,100.0,100.0,0,true_positive
+bridges,stratified,IDENTIF -> RIVER,True,True,100.0,100.0,0,true_positive
+bridges,stratified,IDENTIF -> LOCATION,True,True,100.0,100.0,0,true_positive
+bridges,stratified,IDENTIF -> ERECTED,True,True,100.0,100.0,0,true_positive
+bridges,stratified,IDENTIF -> MATERIAL,True,True,100.0,100.0,0,true_positive
+bridges,stratified,IDENTIF -> TYPE,True,True,100.0,100.0,0,true_positive
+abalone,random,Sex -> Rings,False,False,0.0,0.0,3,false_negative
+abalone,random,"Length, Diameter, Height -> Whole_weight",False,False,97.95918367346938,81.16160096298526,626,false_negative
+abalone,random,"Length, Diameter, Height -> Shucked_weight",False,False,97.95918367346938,81.3120674089678,621,false_negative
+abalone,random,"Length, Diameter, Height -> Viscera_weight",False,False,97.95918367346938,81.19169425218176,625,false_negative
+abalone,random,"Length, Diameter, Height -> Shell_weight",False,False,97.95918367346938,81.52272043334337,614,false_negative
+abalone,stratified,Sex -> Rings,False,False,0.0,0.0,3,false_negative
+abalone,stratified,Diameter -> Length,False,False,67.64705882352942,7.207207207207207,103,false_negative
+abalone,stratified,Length -> Diameter,False,False,73.52941176470588,5.223880597014925,127,false_negative
+breast-cancer,random,"clump_thickness, uniformity_cell_size, uniformity_cell_shape, marginal_adhesion, single_epithelial_cell_size, bare_nuclei, bland_chromatin, normal_nucleoli, mitoses -> class",True,True,100.0,100.0,0,true_positive
+breast-cancer,random,"clump_thickness, uniformity_cell_size, uniformity_cell_shape, marginal_adhesion, single_epithelial_cell_size -> bare_nuclei",False,False,96.875,93.37016574585635,24,false_negative
+breast-cancer,random,"clump_thickness, uniformity_cell_size, uniformity_cell_shape, marginal_adhesion, single_epithelial_cell_size, bare_nuclei -> bland_chromatin",False,False,85.29411764705883,90.6801007556675,37,false_negative
+breast-cancer,random,"clump_thickness, uniformity_cell_size, uniformity_cell_shape, marginal_adhesion, single_epithelial_cell_size, bare_nuclei -> normal_nucleoli",False,False,91.17647058823529,97.48110831234257,10,false_negative
+breast-cancer,stratified,"clump_thickness, uniformity_cell_size, uniformity_cell_shape, marginal_adhesion, single_epithelial_cell_size, bare_nuclei, bland_chromatin, normal_nucleoli, mitoses -> class",True,True,100.0,100.0,0,true_positive
+breast-cancer,stratified,"clump_thickness, uniformity_cell_size, uniformity_cell_shape, marginal_adhesion, single_epithelial_cell_size -> bare_nuclei",False,False,94.44444444444444,93.37016574585635,24,false_negative
+breast-cancer,stratified,"clump_thickness, uniformity_cell_size, uniformity_cell_shape, marginal_adhesion, single_epithelial_cell_size -> bland_chromatin",False,False,91.66666666666666,88.95027624309392,40,false_negative
+breast-cancer,stratified,"clump_thickness, uniformity_cell_size, uniformity_cell_shape, marginal_adhesion, single_epithelial_cell_size -> normal_nucleoli",False,False,97.22222222222221,95.85635359116023,15,false_negative
