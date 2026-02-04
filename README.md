@@ -929,7 +929,7 @@ Projet_Data_Quality/
 │
 ├── .env                    # Clés API (non versionné)
 ├── .gitignore
-└── Rapport_Projet_Data_Quality.md
+└── README.md
 ```
 
 ## C. Configuration de l'environnement
